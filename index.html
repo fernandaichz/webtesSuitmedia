@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ideas - Suitmedia Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+         <img src="assets/img/logo-new.png" alt="Suitmedia Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#" class="active">Ideas</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Ideas</h1>
+      <p>Where all our great things begin</p>
+    </div>
+  </header>
+
+  <section class="filters container">
+    <div id="meta-info">Showing 1 - 10 of 100</div>
+    <div class="selects">
+      <select id="page-size">
+        <option value="10">Show per page: 10</option>
+        <option value="20">Show per page: 20</option>
+        <option value="50">Show per page: 50</option>
+      </select>
+      <select id="sort">
+        <option value="-published_at">Sort by: Newest</option>
+        <option value="published_at">Sort by: Oldest</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="card-container container" id="card-container">
+    <!-- Cards loaded by JS -->
+  </section>
+
+  <section class="pagination container" id="pagination">
+    <!-- Pagination buttons -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

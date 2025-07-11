@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.navbar {
+  background: #ff5a00;
+  padding: 1rem 0;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-links li a.active {
+  border-bottom: 2px solid #fff;
+}
+.page-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #eee;
+}
+.page-header {
+  position: relative;
+  color: #000;
+  text-align: center;
+  padding: 100px 20px;
+  
+  background-image: url('assets/img/haha (2).jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-color: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+
+  transition: background-size 0.3s ease;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.selects select {
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.logo img {
+  height: 50px;
+  width: auto;
+}
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.pagination button {
+  padding: 0.5rem 0.75rem;
+  font-size: 14px;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.pagination button:hover {
+  background-color: #ff5a00;
+  color: white;
+  border-color: #ff5a00;
+}
+.pagination button.active {
+  background-color: #ff5a00;
+  color: white;
+  font-weight: bold;
+  border-color: #ff5a00;
+}
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
